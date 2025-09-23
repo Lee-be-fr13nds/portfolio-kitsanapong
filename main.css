@@ -1,0 +1,199 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+/* Body & HTML */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  background: linear-gradient(
+    180deg, 
+    #0a0a0a 0%, 
+    #1e1e1e 50%, 
+    #323232 100%
+  );
+  color: #f0f0f0;
+}
+
+/* Rectangle Container */
+.rectangle {
+  position: relative;
+  border: 2px solid #5e5e5e;
+  border-radius: 25px;
+  padding: 6rem 2rem 2rem;
+  margin: 1rem 4rem 0 4rem;
+  min-height: 80vh;
+}
+
+/* Header Text */
+.header h1 {
+  color: #f0f0f0;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.header p {
+  color: #f0f0f0;
+  font-weight: 500;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* Lee Dot */
+.lee-dot {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ef7722;
+}
+
+/* Projects Button */
+.btn-projects {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 25px;
+  background-color: #ef7722;
+  color: #f0f0f0;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-projects:hover {
+  background-color: transparent; 
+  color: #ef7722; 
+  border: 2px solid #ef7722;
+}
+
+/* Outline Text */
+.outline-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: clamp(100px, 10vw, 260px);
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 2px #f0f0f080;
+  text-align: center;
+}
+
+/* Profile Image */
+.profile-removebg {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+/* Intro Section */
+.intro-center {
+  max-width: 800px;
+  margin: 20rem auto 1rem auto;
+  text-align: center;
+}
+
+.intro-center h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.intro-center p {
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* Resume Button */
+.btn-resume {
+  border-radius: 25px;
+  background-color: #ef7722;
+  color: #f0f0f0;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-resume:hover {
+  background-color: transparent;
+  color: #ef7722;
+  border: 2px solid #ef7722;
+}
+
+.btn-social {
+  border-radius: 25px;
+  background-color: #ef7722;
+  color: #f0f0f0;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+  background-color: transparent;
+  color: #ef7722;
+  border: 2px solid #ef7722;
+}
+
+/* Projects Cards */
+.projects {
+  margin-top: 1rem;
+}
+
+.projects .row {
+  margin: 0;
+}
+
+.projects .col-12,
+.projects .col-md-4 {
+  padding: 0.5rem;
+}
+
+.projects .card {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.projects .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid #ef7722;
+}
+
+.projects .card img {
+  display: block;
+  margin: 30px auto 15px auto;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .outline-text {
+    font-size: clamp(50px, 15vw, 150px);
+  }
+  .profile-removebg {
+    width: 60%;
+    top: 30%;
+  }
+  .intro-center {
+    margin: 40% auto 1rem auto;
+  }
+}
